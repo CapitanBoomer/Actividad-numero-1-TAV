@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input placeholder="Ingrese su nombre..."></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input placeholder="Contraseña..."></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Confirmar Contraseña</ion-label>
+      <ion-input placeholder="Contraseña..."></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button  color="danger" [routerLink]="['']">
+    <ion-icon name="close-outline"></ion-icon>
+  </ion-button>
+  <ion-button  color="success" [routerLink]="['/login']">
+    <ion-icon name="person-add-outline"></ion-icon>
+  </ion-button>
+</ion-card>
+</ion-content>

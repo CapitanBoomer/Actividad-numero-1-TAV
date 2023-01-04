@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Wiki</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="img-inicio">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Assassin%27s_Creed_Logo.svg/1200px-Assassin%27s_Creed_Logo.svg.png">
+  </div>
+  <div class="centrar-boton">
+    <ion-button color="light" [routerLink]="['/registro']">
+      <ion-icon name="person-add-outline" slot="start"></ion-icon>
+      Registrarse
+    </ion-button>
+    <ion-button color="light" [routerLink]="['/login']">
+      <ion-icon name="person-outline" slot="start"></ion-icon>Iniciar sesión</ion-button>
+  </div>
+  <div>
+    <h6>¿Que es esta Wiki? <a [routerLink]="['/info']">Info</a></h6>
+    <h6>Quiero ser parte <a [routerLink]="['/contacto']">Contactanos</a></h6>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-item>
+      <ion-icon slot="start" name="moon"></ion-icon>
+      <ion-label>modo oscuro</ion-label>
+      <ion-toggle [ngModel]="modooscuro" (ionChange)="estado()"></ion-toggle>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
