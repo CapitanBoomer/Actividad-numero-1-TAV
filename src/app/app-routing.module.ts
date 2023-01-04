@@ -28,6 +28,14 @@ const routes: Routes = [
     path: 'contacto',
     loadChildren: () => import('./pages/contacto/contacto.module').then( m => m.ContactoPageModule)
   },
+  {
+    path: 'lista-scp',
+    loadChildren: () => import('./scp/lista-scp/lista-scp.module').then( m => m.ListaScpPageModule)
+  },
+  {
+    path: 'info-scp',
+    loadChildren: () => import('./scp/info-scp/info-scp.module').then( m => m.InfoScpPageModule)
+  },
 
 ];
 

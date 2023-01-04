@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Biblioteca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let scp of scp "   (click)="navegarQuery()">
+      <ion-thumbnail slot="start">
+        <img [src]="[scp.foto]" alt=""></ion-thumbnail>
+      <ion-label>
+        <ion-card-title>Nombre: {{scp.nombre}}</ion-card-title>
+        <ion-card-subtitle>Numero: {{scp.numero}}</ion-card-subtitle>
+        <ion-card-subtitle>Clasificación: {{scp.clasificacion}}</ion-card-subtitle>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
