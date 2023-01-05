@@ -38,7 +38,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'infoper/:id/:nombre/:foto/:nacionalidad/:faccion/:info',
+    path: 'infoper/:id/:nombre/:foto/:nacionalidad/:faccion/:info/:ciudad',
     loadChildren: () => import('./pages/lore/info-personaje/info-personaje.module').then( m => m.InfoPersonajePageModule)
   },
 
