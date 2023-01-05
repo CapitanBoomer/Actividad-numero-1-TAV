@@ -28,6 +28,19 @@ const routes: Routes = [
     path: 'contacto',
     loadChildren: () => import('./pages/contacto/contacto.module').then( m => m.ContactoPageModule)
   },
+  {
+    path: 'personajes',
+    loadChildren: () => import('./pages/lore/personajes/personajes.module').then( m => m.PersonajesPageModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./pages/contacto/contacto.module').then( m => m.ContactoPageModule)
+  },
+
+  {
+    path: 'infoper/:id/:nombre/:foto/:nacionalidad/:faccion/:info',
+    loadChildren: () => import('./pages/lore/info-personaje/info-personaje.module').then( m => m.InfoPersonajePageModule)
+  },
 
 ];
 
